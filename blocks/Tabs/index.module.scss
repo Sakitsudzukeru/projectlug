@@ -1,0 +1,31 @@
+.Header {
+  width: 374px;
+  height: 56px;
+  background: #445ffc;
+  border-radius: 25px 25px 0px 0px;
+  cursor: pointer;
+
+  // text
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+
+  color: #ffffff;
+}
+
+.Panel {
+  max-width: 1009px;
+  height: 656px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.TabsContent {
+  max-width: 1009px;
+  height: 656px;
+  border: 3px solid #445ffc;
+  border-radius: 0px 25px 25px 25px;
+}

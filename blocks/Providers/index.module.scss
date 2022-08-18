@@ -1,0 +1,42 @@
+.Body {
+  // width: 1920px;
+  height: 1798px;
+  // left: 3px;
+  // top: 1195.52px;
+}
+
+.Header {
+  text-align: center;
+  position: relative;
+  height: 109px;
+  width: 409px;
+  padding-top: 50px;
+}
+
+.Frame {
+  padding-top: 20px;
+  padding-right: 50px;
+  width: 510px;
+  height: 110px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50.8999px;
+  line-height: 62px;
+  color: #333333;
+  background: url("../../icons/Frame.svg") no-repeat center top / cover;
+}
+
+.Subtitle {
+  padding-top: 84px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+
+.Paragraph {
+  text-align: center;
+}

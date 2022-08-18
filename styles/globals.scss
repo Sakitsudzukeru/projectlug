@@ -1,0 +1,30 @@
+@import "node_modules/bootstrap/scss/functions";
+
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px,
+);
+
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+// @import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/static/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/static/Montserrat-Bold.ttf");
+  font-weight: 600;
+}
+
+* {
+  font-family: "Montserrat";
+}
