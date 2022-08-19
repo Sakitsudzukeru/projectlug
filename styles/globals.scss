@@ -8,11 +8,11 @@ $container-max-widths: (
   xxl: 960px,
 );
 
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-// @import "node_modules/bootstrap/scss/grid";
+$body-color: #333333;
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
+//
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/static/Montserrat-Regular.ttf");

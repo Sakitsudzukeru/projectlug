@@ -5,7 +5,7 @@ import Tabs from "../Tabs/index";
 
 const Providers: React.FC<{ tabs: any[] }> = ({ tabs }) => {
   return (
-    <div id="provider" className={styles.Body}>
+    <div id="providers" className={styles.Providers}>
       <div className={`${styles.Header} container`}>
         <h1 className={styles.Frame}>Провайдерам</h1>{" "}
       </div>
