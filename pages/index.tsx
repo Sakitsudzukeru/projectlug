@@ -6,7 +6,12 @@ import Menu from "../blocks/Menu";
 import Providers from "../blocks/Providers";
 import Traffic from "../blocks/Traffic";
 
-const Home: NextPage = ({ providersTabs }) => {
+const Home: NextPage = ({
+  providersTabs,
+  providersTraffics,
+  providersTrafficsPublic,
+  providersTrafficPublic,
+}) => {
   return (
     <>
       {" "}
@@ -19,7 +24,11 @@ const Home: NextPage = ({ providersTabs }) => {
         <Header />
 
         <Providers tabs={providersTabs} />
-        <Traffic />
+        <Traffic
+          traffics={providersTraffics}
+          passServices={providersTrafficsPublic}
+          passService={providersTrafficPublic}
+        />
       </div>
     </>
   );
@@ -27,16 +36,27 @@ const Home: NextPage = ({ providersTabs }) => {
 
 export default Home;
 export async function getServerSideProps() {
-  const res = await fetch("http://10.200.52.9:1337/api/providers?populate=*");
-  const rest = await fetch("http://10.200.52.9:1337/api/traffics?populate=*");
+  const { data: providersTabs } = await (
+    await fetch("http://10.200.52.9:1337/api/providers?populate=*")
+  ).json();
+  const { data: providersTraffics } = await (
+    await fetch("http://10.200.52.9:1337/api/traffics")
+  ).json();
 
-  const { data: providersTabs } = await res.json();
-  // const { dataTrafic: traffic } = await rest.json();
+  const { data: providersTrafficsPublic } = await (
+    await fetch("http://10.200.52.9:1337/api/connection-points")
+  ).json();
+
+  const { data: providersTrafficPublic } = await (
+    await fetch("http://10.200.52.9:1337/api/traffics-public")
+  ).json();
 
   return {
     props: {
       providersTabs,
-      // traffic,
+      providersTraffics,
+      providersTrafficsPublic,
+      providersTrafficPublic,
     },
   };
 }

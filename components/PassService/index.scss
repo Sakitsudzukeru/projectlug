@@ -1,0 +1,44 @@
+.pass-services {
+  position: relative;
+  padding-top: 35px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.pass-attribTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.pass-attribDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.pass-AttribPrice {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.group {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 0.39fr);
+  justify-content: center;
+}
